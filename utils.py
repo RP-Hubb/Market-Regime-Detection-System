@@ -33,3 +33,4 @@ def black_scholes_price(S0, K, r, sigma, T, option_type='call'):
     else:
         price = K * np.exp(-r * T) * norm.cdf(-d2) - S0 * norm.cdf(-d1)
     return price
+
